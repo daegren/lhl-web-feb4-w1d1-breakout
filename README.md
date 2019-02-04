@@ -14,7 +14,7 @@ You'll be given a date as a string (not a `Date` object). The date will always b
 
 ## Open Questions
 
-- How do I seperate a string into parts?
-- How to convert a number into a month name?
-- How to remove leading `0`s from day number?
-- How to add `st`, `nd`, `rd` and `th` to the day number?
+- [x] How do I seperate a string into parts?
+- [x] How to convert a number into a month name?
+- [ ] How to remove leading `0`s from day number?
+- [ ] How to add `st`, `nd`, `rd` and `th` to the day number?
