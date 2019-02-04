@@ -13,6 +13,26 @@ var monthStrings = [
   "December"
 ];
 
+function generateDaySuffix(day) {
+  switch(day) {
+    case 1:
+    case 21:
+    case 31:
+      return 'st';
+
+    case 2:
+    case 22:
+      return 'nd';
+
+    case 3:
+    case 23:
+      return 'rd';
+
+    default:
+      return 'th';
+  }
+}
+
 function talkingCalendar(input) {
   var parts = input.split('/');
 
@@ -21,28 +41,8 @@ function talkingCalendar(input) {
   var day = parseInt(parts[2], 10);
 
   var monthStr = monthStrings[month - 1];
-  var daySuffix;
-  switch(day) {
-    case 1:
-    case 21:
-    case 31:
-      daySuffix = 'st';
-    break;
-
-    case 2:
-    case 22:
-      daySuffix = 'nd';
-    break;
-
-    case 3:
-    case 23:
-      daySuffix = 'rd';
-    break;
-
-    default:
-      daySuffix = 'th';
-    break;
-  }
+  var daySuffix = generateDaySuffix(day);
+  
 
   return `${monthStr} ${day}${daySuffix}, ${year}`;
   // return monthStr + " " + day + daySuffix + ", " + year;

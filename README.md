@@ -16,5 +16,16 @@ You'll be given a date as a string (not a `Date` object). The date will always b
 
 - [x] How do I seperate a string into parts?
 - [x] How to convert a number into a month name?
-- [ ] How to remove leading `0`s from day number?
-- [ ] How to add `st`, `nd`, `rd` and `th` to the day number?
+- [x] How to remove leading `0`s from day number?
+- [x] How to add `st`, `nd`, `rd` and `th` to the day number?
+
+### Suffix
+
+- `st`: 1, 21, 31
+- `nd`: 2, 22
+- `rd`: 3, 23
+- `th`: 4-20, 24-30
+
+
+
+
